@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  padding-bottom: 216px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 1em;
+  font-size: 1rem;
+  margin: 1em auto;
+  width: 100%;
+  background-color: #794983;
+  color: white;
+  transition: all 250ms;
+}
+
+/*  Estilos nav */
+header {
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  margin: 0.5em 0 0 1em;
+  height: 70%;
+  width: 100%;
+}
+
+.nav {
+  background-color: #f2f2f2;
+  display: inline-flex;
+  height: 100px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.nav__list {
+  font-weight: 400;
+  margin: auto 0 auto auto;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: #2e148c;
+}
+
+.nav__item {
+  display: inline;
+  margin: 0 1rem;
+}
+
+/*  Estilos main*/
+
+.title {
+  font-weight: 600;
+  text-align: center;
+  color: #515151;
+  padding-block: 1.2em;
+}
+
+.cards-list {
+  margin: 0 auto;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.cards-list__item {
+  display: inline-block;
+  margin: 2rem 1rem;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #c39ec3;
+  border-radius: 0.5em;
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+.card__image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 0em 2em 1em 2em;
+}
+
+.card__content > h2 {
+  text-align: center;
+  margin: 0.4em 0;
+}
+
+.card__details {
+  margin: 1em 0 0 0;
+  list-style: none;
+}
+
+.card__details > li {
+  margin: 0.5em 0;
+}
+
+.card__content > button:hover {
+  background-color: #3c1c42;
+  color: white;
+}
+
+.footer {
+  background-color: #d4add9;
+  color: #2e148c;
+  display: inline-flex;
+  height: 216px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__tab {
+  padding: 1em 4em;
+  display: inline-block;
+  width: 40%;
+}
+
+.footer__tab.spaced {
+  margin: 0 0 0 auto;
+}
+
+.footer__tab > nav > ul {
+  list-style: none;
+}
+
+.footer__tab > nav > ul > li > a {
+  color: #2e148c;
+  margin: 0.5em;
+}
+
+.footer__img {
+  padding: 0;
+  height: 100%;
+}
+
+/* FORMULARIO */
+
+.form {
+  width: min(90%, 512px);
+  margin: 0 auto;
+}
+
+.label--block {
+  display: block;
+  width: 100%;
+}
+
+.input {
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  border: 1px solid #794983;
+  background-color: white;
+}
+
+.input-full-size {
+  width: 100%;
+}
+
+.input-container {
+  margin-block: 0.5rem;
+}
+
+.button-container {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.button-container > .btn {
+  padding-inline: 5em;
+}
+
+/* Sobre nosotros */
+
+.about__row {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.about__col {
+  display: inline-block;
+  width: 49%;
+  padding: 1em 4em;
+}
+
+.about__img {
+  width: 100%;
+  object-fit: cover;
+  height: 272px;
+  border-radius: 1em;
+}
+
+.about__title {
+  margin-block: 2em;
+}
+
+/* INICIO */
+
+.new__pets {
+  background-color: #c39ec3;
+}
+
+.subtitle {
+  font-weight: 300;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #794983;
+}
+
+.form__home {
+  background-color: #fae7fa;
+}
+
+.hero {
+  height: fit-content;
+}
+
+.hero__tab {
+  display: inline-block;
+  width: 49%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.hero__tab--title {
+  padding-inline: 2em;
+}
+
+.hero__tab--title > h1 {
+  font-size: 50px;
+  color: #2e148c;
+}
+
+.hero__tab--title > p {
+  color: #3c1c42;
+}
+
+/* CONSEJOS */
+
+.advices__card {
+  display: inline-block;
+  background-color: #f5dff8;
+  width: 40%;
+  height: 100%;
+  border-radius: 1em;
+  margin: 1em 4%;
+  padding: 1em 3em;
+}
+
+.advices__card > ol > li {
+  margin-block: 0.5em;
+}
+
+.advices > h2 {
+  padding-block: 1em;
+}
