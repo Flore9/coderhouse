@@ -16,43 +16,40 @@
   <body>
     <!--Header: Logo + Nav -->
     <header>
-      <nav class="nav">
-        <div>
-          <a href="index.html">
-            <img src="./assets/logo.png" alt="Logo" class="logo"
-          /></a>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item">
+      <div>
+        <a href="index.html"> <img src="./assets/logo.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul class="header__nav__list">
+          <li>
             <a href="./rescued.html">Nuestros rescatados</a>
           </li>
-          <li class="nav__item"><a href="./contact.html">Contacto</a></li>
-          <li class="nav__item"><a href="./about.html">Sobre nosotros</a></li>
-          <li class="nav__item">
+          <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="./about.html">Sobre nosotros</a></li>
+          <li>
             <a href="./advices.html">Consejos para adoptantes</a>
           </li>
         </ul>
       </nav>
     </header>
-
-    <!-- Main: Contenido principal -->
     <main>
-      <!-- Section: Tiulo + Hero  -->
       <section class="hero">
-        <div class="hero__tab hero__tab--title">
+        <div class="hero__text">
           <h1>Nombre producto</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
-              placeat, soluta rem consequuntur maxime impedit?
-            </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias
+            placeat, soluta rem consequuntur maxime impedit?
+          </p>
         </div>
 
-        <div class="hero__tab"><img src="./assets/hero.png" alt="Perrito con bolsa" /></div>
+        <div class="hero__img">
+          <img src="./assets/hero.png" alt="Perrito con bolsa" />
+        </div>
       </section>
       <section class="new__pets">
         <h1 class="title">¡Estamos buscando una familia que nos de amor!</h1>
-        <ul class="cards-list">
-          <li class="cards-list__item">
+        <ul class="new__pets__list">
+          <li>
             <div class="card">
               <img
                 src="./assets/pets/blanquito.jpg"
@@ -71,7 +68,7 @@
               </div>
             </div>
           </li>
-          <li class="cards-list__item">
+          <li>
             <div class="card">
               <img
                 src="./assets/pets/rollito.jpg"
@@ -90,7 +87,7 @@
               </div>
             </div>
           </li>
-          <li class="cards-list__item">
+          <li>
             <div class="card">
               <img
                 src="./assets/pets/tom.jpg"
@@ -109,7 +106,7 @@
               </div>
             </div>
           </li>
-          <li class="cards-list__item">
+          <li>
             <div class="card">
               <img
                 src="./assets/pets/arya.jpeg"
@@ -127,6 +124,8 @@
                 <button class="btn">Quiero adoptar</button>
               </div>
             </div>
+          </li>
+        </ul>
       </section>
       <section class="form__home">
         <h1 class="title">¿Querés adoptar?</h1>
@@ -156,21 +155,18 @@
         </form>
       </section>
     </main>
-    <!--Footer-->
-    <footer class="footer">
-      <div class="footer__tab">
-        <nav>
-          <h2>Links Útiles:</h2>
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./rescued.html">Nuestros rescatados</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
-            <li><a href="./about.html">Sobre nosotros</a></li>
-            <li><a href="./advices.html">Consejos para adoptantes</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__tab spaced">
+    <footer>
+      <nav class="footer__nav">
+        <h2>Links Útiles:</h2>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./rescued.html">Nuestros rescatados</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="./about.html">Sobre nosotros</a></li>
+          <li><a href="./advices.html">Consejos para adoptantes</a></li>
+        </ul>
+      </nav>
+      <div class="footer__legals">
         <h2>Legales</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
