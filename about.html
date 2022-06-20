@@ -16,19 +16,17 @@
   <body>
     <!--Header: Logo + Nav -->
     <header>
-      <nav class="nav">
-        <div>
-          <a href="index.html">
-            <img src="./assets/logo.png" alt="Logo" class="logo"
-          /></a>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item">
+      <div>
+        <a href="index.html"> <img src="./assets/logo.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul class="header__nav__list">
+          <li>
             <a href="./rescued.html">Nuestros rescatados</a>
           </li>
-          <li class="nav__item"><a href="./contact.html">Contacto</a></li>
-          <li class="nav__item"><a href="./about.html">Sobre nosotros</a></li>
-          <li class="nav__item">
+          <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="./about.html">Sobre nosotros</a></li>
+          <li>
             <a href="./advices.html">Consejos para adoptantes</a>
           </li>
         </ul>
@@ -36,67 +34,46 @@
     </header>
     <main>
       <h1 class="title about__title">Sobre nosotros</h1>
-      <div class="about__row">
-        <div class="about__col">
-          <img
-            class="about__img"
-            src="./assets/adoption.jpg"
-            alt="Mujer abrazando perrito"
-          />
-        </div>
-        <div class="about__col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            vitae.
-          </p>
-        </div>
-      </div>
-      <div class="about__row">
-        <div class="about__col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            vitae.
-          </p>
-        </div>
-        <div class="about__col">
-          <img
-            class="about__img"
-            src="./assets/sobrenosotros.png"
-            alt="Mujer abrazando perrito"
-          />
-        </div>
-      </div>
-      <div class="about__row">
-        <div class="about__col">
-          <img
-            class="about__img"
-            src="./assets/sobrenosotros3.jpg"
-            alt="Mujer abrazando perrito"
-          />
-        </div>
-        <div class="about__col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-            vitae.
-          </p>
-        </div>
+      <div class="about-grid">
+        <img
+          class="about__img"
+          src="./assets/adoption.jpg"
+          alt="Mujer abrazando perrito"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, vitae.
+        </p>
+        <img
+          class="about__img"
+          src="./assets/sobrenosotros.png"
+          alt="Mujer abrazando perrito"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, vitae.
+        </p>
+        <img
+          class="about__img"
+          src="./assets/sobrenosotros3.jpg"
+          alt="Mujer abrazando perrito"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, vitae.
+        </p>
       </div>
     </main>
     <!--Footer-->
-    <footer class="footer">
-      <div class="footer__tab">
-        <nav>
-          <h2>Links Útiles:</h2>
-          <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./rescued.html">Nuestros rescatados</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
-            <li><a href="./about.html">Sobre nosotros</a></li>
-            <li><a href="./advices.html">Consejos para adoptantes</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="footer__tab spaced">
+    <footer>
+      <nav class="footer__nav">
+        <h2>Links Útiles:</h2>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./rescued.html">Nuestros rescatados</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+          <li><a href="./about.html">Sobre nosotros</a></li>
+          <li><a href="./advices.html">Consejos para adoptantes</a></li>
+        </ul>
+      </nav>
+      <div class="footer__legals">
         <h2>Legales</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
