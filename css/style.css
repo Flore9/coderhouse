@@ -45,10 +45,19 @@ main {
   transition: all 250ms;
 }
 
+.btn:hover {
+  background-color: #3c1c42;
+  color: white;
+}
+
 /*  Componente header */
 header {
   align-items: center;
-  background-color: #f2f2f2;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 239, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -68,6 +77,21 @@ header {
   font-weight: 400;
   text-decoration: none;
   color: #2e148c;
+  position: relative;
+}
+
+.header__nav__list > li > a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
+  transform: translateX(-100%);
+}
+
+.header__nav__list > li > a:hover::after {
+  transition: background-color 150ms ease-in;
+  background-color: #794983;
 }
 
 @media (min-width: 1024px) {
@@ -119,10 +143,25 @@ footer {
   grid-row-start: 2;
   grid-row-end: 3;
   width: 100%;
+  overflow-y: hidden;
 }
 
 .footer__img img {
   max-width: 100%;
+  animation: slide-bottom 5s infinite;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(100%);
+  }
+  75% {
+    transform: none;
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -160,17 +199,28 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .hero__text {
   text-align: center;
+  animation: slide-left 1.5s;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: none;
+  }
 }
 
 .hero__text h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1em;
   color: #2e148c;
-  padding: 0.5em;
+  padding: 0.5em 5em;
 }
 
 .hero__text p {
@@ -180,6 +230,16 @@ footer {
 .hero__img {
   max-width: 100%;
   width: fit-content;
+  animation: slide-right 1.5s;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: none;
+  }
 }
 
 .hero__img img {
@@ -198,7 +258,7 @@ footer {
 /* Home: Section New pets */
 
 .new__pets {
-  background-color: #c39ec3;
+  background-color: #e6bde6;
   padding: 0.5em;
 }
 
@@ -230,7 +290,7 @@ footer {
 /*Home: Form */
 
 .form__home {
-  background-color: #fae7fa;
+  background-color: #ffffff;
 }
 
 /* Rescued: Section card list */
@@ -256,6 +316,11 @@ footer {
   border-radius: 0.5em;
   width: 300px;
   overflow: hidden;
+  transition: 300ms;
+}
+
+.card:hover {
+  border: 1px solid #794983;
 }
 
 .card__image {
@@ -282,11 +347,6 @@ footer {
   margin: 0.5em 0;
 }
 
-.card__content > button:hover {
-  background-color: #3c1c42;
-  color: white;
-}
-
 /* Contact: Form */
 
 .form {
@@ -303,7 +363,12 @@ footer {
   padding: 0.5em 1em;
   border-radius: 0.3em;
   border: 1px solid #794983;
+  opacity: 0.5;
   background-color: white;
+}
+
+.input:hover {
+  opacity: 1;
 }
 
 .input-full-size {
@@ -321,6 +386,11 @@ footer {
 
 .button-container > .btn {
   padding-inline: 5em;
+}
+
+.button-container > .button:hover {
+  background-color: #3c1c42;
+  color: white;
 }
 
 /* About  */
