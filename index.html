@@ -10,157 +10,190 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>ProyectoCoder</title>
   </head>
   <body>
     <!--Header: Logo + Nav -->
-    <header>
-      <div>
-        <a href="index.html" class="animate__animated animate__pulse">
+    <header class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
           <img src="./assets/logo.png" alt="Logo"
         /></a>
-      </div>
-      <nav>
-        <ul class="header__nav__list">
-          <li>
-            <a href="./rescued.html" class="hover_nav">Nuestros rescatados</a>
-          </li>
-          <li><a href="./contact.html" class="hover_nav">Contacto</a></li>
-          <li><a href="./about.html" class="hover_nav">Sobre nosotros</a></li>
-          <li>
-            <a href="./advices.html" class="hover_nav"
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="./rescued.html" class="nav-link">Nuestros rescatados</a>
+            <a href="./contact.html" class="nav-link">Contacto</a>
+            <a href="./about.html" class="nav-link">Sobre nosotros</a>
+            <a href="./advices.html" class="nav-link"
               >Consejos para adoptantes</a
             >
-          </li>
-        </ul>
-      </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero__text">
-          <h1>Adopta.me</h1>
-          <p>
-            En Adopta.me queremos ayudarte a encontrar al nuevo miembro de tu
-            familia
-          </p>
-        </div>
-
-        <div class="hero__img">
-          <img src="./assets/hero.png" alt="Perrito con bolsa" />
+      <section class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <h1>Adopta.me</h1>
+            <p>
+              En Adopta.me queremos ayudarte a encontrar al nuevo miembro de tu
+              familia
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img
+              src="./assets/hero.png"
+              class="img-fluid"
+              alt="Perrito con bolsa"
+            />
+          </div>
         </div>
       </section>
-      <section class="new__pets">
-        <h1 class="title">¡Estamos buscando una familia que nos de amor!</h1>
-        <ul class="new__pets__list">
-          <li>
+      <section class="container-fluid highlighted-section">
+        <h2 class="container title">
+          ¡Estamos buscando una familia que nos de amor!
+        </h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+          <div class="col mb-4">
             <div class="card">
               <img
-                src="./assets/pets/blanquito.jpg"
+                src="./assets/pets/manchita.png"
                 alt="Foto de la mascota"
-                class="card__image"
+                class="img-fluid card-img-top"
               />
-              <div class="card__content">
-                <h2 class="card__name">Manchita</h2>
-                <ul class="card__details">
+              <div class="card-body">
+                <h2 class="card-title">Manchita</h2>
+                <ul class="card-list-details">
                   <li>Edad: 9 meses</li>
                   <li>Vacunas: Si</li>
                   <li>Esterilizado: Si</li>
                   <li>Macho</li>
                 </ul>
-                <button class="btn"><span>Quiero Adoptar</span></button>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Quiero Adoptar</button>
+                </div>
               </div>
             </div>
-          </li>
-          <li>
+          </div>
+          <div class="col mb-4">
             <div class="card">
               <img
-                src="./assets/pets/rollito.jpg"
+                src="./assets/pets/rollito.png"
                 alt="Foto de la mascota"
-                class="card__image"
+                class="img-fluid card-img-top"
               />
-              <div class="card__content">
-                <h2 class="card__name">Rollito</h2>
-                <ul class="card__details">
+              <div class="card-body">
+                <h2 class="card-title">Rollito</h2>
+                <ul class="card-list-details">
                   <li>Edad: 2 años</li>
                   <li>Vacunas: Si</li>
                   <li>Esterilizado: Si</li>
                   <li>Macho</li>
                 </ul>
-                <button class="btn">Quiero adoptar</button>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Quiero adoptar</button>
+                </div>
               </div>
             </div>
-          </li>
-          <li>
+          </div>
+          <div class="col mb-4">
             <div class="card">
               <img
-                src="./assets/pets/tom.jpg"
+                src="./assets/pets/tom.png"
                 alt="Foto de la mascota"
-                class="card__image"
+                class="img-fluid card-img-top"
               />
-              <div class="card__content">
-                <h2 class="card__name">Tom</h2>
-                <ul class="card__details">
+              <div class="card-body">
+                <h2 class="card-title">Tom</h2>
+                <ul class="card-list-details">
                   <li>Edad: 10 meses</li>
                   <li>Vacunas: Si</li>
                   <li>Esterilizado: Si</li>
                   <li>Macho</li>
                 </ul>
-                <button class="btn">Quiero adoptar</button>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Quiero adoptar</button>
+                </div>
               </div>
             </div>
-          </li>
-          <li>
+          </div>
+          <div class="col mb-4">
             <div class="card">
               <img
-                src="./assets/pets/arya.jpeg"
+                src="./assets/pets/arya.png"
                 alt="Foto de la mascota"
-                class="card__image"
+                class="img-fluid card-img-top"
               />
-              <div class="card__content">
-                <h2 class="card__name">Arya</h2>
-                <ul class="card__details">
+              <div class="card-body">
+                <h2 class="card-title">Arya</h2>
+                <ul class="card-list-details">
                   <li>Edad: 9 meses</li>
                   <li>Vacunas: Si</li>
                   <li>Esterilizado: Si</li>
                   <li>Hembra</li>
                 </ul>
-                <button class="btn">Quiero adoptar</button>
+                <div class="btn-wrapper">
+                  <button class="btn btn-primary">Quiero adoptar</button>
+                </div>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
-      <section class="form__home">
-        <h1 class="title">¿Querés adoptar?</h1>
-        <h2 class="subtitle">Consultanos acá y te ayudamos</h2>
-        <form action="" class="form">
-          <div class="input-container">
-            <label for="name" class="label--block">Nombre</label>
-            <input name="name" type="text" class="input input-full-size" />
+      <section
+        class="container-fluid form-section row justify-content-center p-4"
+      >
+        <div class="col col-12 text-center">
+          <h2>¿Querés adoptar?</h2>
+          <h3>Consultanos acá y te ayudamos</h3>
+        </div>
+        <form class="col col-12">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input name="name" type="text" class="form-control" />
           </div>
-          <div class="input-container">
-            <label for="email" class="label--block">Email</label>
-            <input name="email" type="email" class="input input-full-size" />
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" />
           </div>
-          <div class="input-container">
-            <label>Consulta</label>
+          <div class="mb-3">
+            <label class="form-label">Consulta</label>
             <textarea
               name=""
               id=""
               cols="20"
               rows="10"
-              class="input input-full-size"
+              class="form-control"
             ></textarea>
           </div>
-          <div class="button-container">
-            <button class="btn" type="submit">Enviar</button>
+          <div>
+            <button class="btn btn-primary px-5" type="submit">Enviar</button>
           </div>
         </form>
       </section>
     </main>
-    <footer>
-      <nav class="footer__nav">
+    <footer class="row container-fluid pt-4 px-md-5">
+      <nav class="col col-12 col-md-4">
         <h2>Links Útiles:</h2>
         <ul>
           <li><a href="./index.html">Inicio</a></li>
@@ -170,7 +203,7 @@
           <li><a href="./advices.html">Consejos para adoptantes</a></li>
         </ul>
       </nav>
-      <div class="footer__legals">
+      <div class="col col-12 col-md-4">
         <h2>Legales</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
@@ -178,9 +211,19 @@
           laudantium veritatis, eos modi!
         </p>
       </div>
-      <div class="footer__img">
-        <img src="./assets/perrofooter.png" alt="perro blanco" />
+      <div class="col col-12 col-md-4">
+        <img
+          src="./assets/perrofooter.png"
+          class="img-fluid"
+          alt="perro blanco"
+        />
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

@@ -1,0 +1,81 @@
+header {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 239, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+section {
+  padding-bottom: 4em;
+}
+
+section > h1 {
+  margin-block: 1em;
+}
+
+footer {
+  background-color: #d4add9;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer nav ul li a {
+  color: #2e148c;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn.btn-primary {
+  background-color: #794983;
+  border: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: #3c1c42;
+}
+
+.highlighted-section h2 {
+  margin-bottom: 1em;
+}
+
+.card {
+  height: max-content;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-list-details {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.card-list-details > * {
+  border-radius: 0.5em;
+  background-color: #edccd8;
+  width: fit-content;
+  padding: 0.2em 0.4em;
+  margin: 0.2em;
+}
+
+.form-section {
+  background-color: #fae7fa;
+}
+
+.form-section form {
+  max-width: 768px;
+}

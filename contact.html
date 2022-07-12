@@ -10,74 +10,103 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <!--Header: Logo + Nav -->
-    <header>
-      <div>
-        <a href="index.html"> <img src="./assets/logo.png" alt="Logo" /></a>
+    <header class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="./assets/logo.png" alt="Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a href="./rescued.html" class="nav-link">Nuestros rescatados</a>
+            <a href="./contact.html" class="nav-link">Contacto</a>
+            <a href="./about.html" class="nav-link">Sobre nosotros</a>
+            <a href="./advices.html" class="nav-link"
+              >Consejos para adoptantes</a
+            >
+          </div>
+        </div>
       </div>
-      <nav>
-        <ul class="header__nav__list">
-          <li>
-            <a href="./rescued.html">Nuestros rescatados</a>
-          </li>
-          <li><a href="./contact.html">Contacto</a></li>
-          <li><a href="./about.html">Sobre nosotros</a></li>
-          <li>
-            <a href="./advices.html">Consejos para adoptantes</a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
-      <!--Formulario de contacto / Adopción -->
-      <h2 class="title">Contacto</h2>
-      <form action="" class="form">
-        <div class="input-container">
-          <label for="name" class="label--block">Nombre</label>
-          <input name="name" type="text" class="input input-full-size" />
+      <section class="py-5 form-section row justify-content-center">
+        <!--Formulario de contacto / Adopción -->
+        <div class="col col-12 text-center">
+          <h2>Contacto</h2>
         </div>
-        <div class="input-container">
-          <label for="email" class="label--block">Email</label>
-          <input name="email" type="email" class="input input-full-size" />
-        </div>
-        <div class="input-container">
-          <p>Qué te gustaría adoptar?</p>
-          <label for="pet">Perro</label>
-          <input type="radio" name="pet" value="dog" />
-          <label for="pet">Gato</label>
-          <input type="radio" name="pet" value="cat" />
-        </div>
-        <label>¿De dónde sos?</label>
-        <div class="input-container">
-          <select name="" id="" class="input">
-            <option value="">Zona norte GBA</option>
-            <option value="">Zona Sur GBA</option>
-            <option value="">Zona Oeste GBA</option>
-            <option value="">Gran Buenos Aires</option>
-          </select>
-        </div>
-        <div class="input-container">
-          <label>Comentarios adicionales</label>
-          <textarea
-            name=""
-            id=""
-            cols="20"
-            rows="10"
-            class="input input-full-size"
-          ></textarea>
-        </div>
-        <div class="button-container">
-          <button class="btn" type="submit">Enviar</button>
-        </div>
-      </form>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input name="name" type="text" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <p>Qué te gustaría adoptar?</p>
+            <div class="form-check">
+              <input
+                type="radio"
+                name="pet"
+                value="dog"
+                class="form-check-input"
+              />
+              <label for="pet" class="form-check-label">Perro</label>
+            </div>
+            <div class="form-check">
+              <input
+                type="radio"
+                name="pet"
+                value="cat"
+                class="form-check-input"
+              />
+              <label for="pet" class="form-check-label">Gato</label>
+            </div>
+          </div>
+          <label class="form-label">¿De dónde sos?</label>
+          <div class="mb-3">
+            <select class="form-select">
+              <option value="">Zona norte GBA</option>
+              <option value="">Zona Sur GBA</option>
+              <option value="">Zona Oeste GBA</option>
+              <option value="">Gran Buenos Aires</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Comentarios adicionales</label>
+            <textarea rows="5" class="form-control"></textarea>
+          </div>
+          <div>
+            <button class="btn btn-primary px-5" type="submit">Enviar</button>
+          </div>
+        </form>
+      </section>
     </main>
-    <!--Footer-->
-    <footer>
-      <nav class="footer__nav">
+    <footer class="row container-fluid pt-4 px-md-5">
+      <nav class="col col-12 col-md-4">
         <h2>Links Útiles:</h2>
         <ul>
           <li><a href="./index.html">Inicio</a></li>
@@ -87,7 +116,7 @@
           <li><a href="./advices.html">Consejos para adoptantes</a></li>
         </ul>
       </nav>
-      <div class="footer__legals">
+      <div class="col col-12 col-md-4">
         <h2>Legales</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
@@ -95,9 +124,19 @@
           laudantium veritatis, eos modi!
         </p>
       </div>
-      <div class="footer__img">
-        <img src="./assets/perrofooter.png" alt="perro blanco" />
+      <div class="col col-12 col-md-4">
+        <img
+          src="./assets/perrofooter.png"
+          class="img-fluid"
+          alt="perro blanco"
+        />
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
