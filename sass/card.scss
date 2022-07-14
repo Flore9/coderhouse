@@ -1,0 +1,35 @@
+@use "shared";
+
+.card {
+  background-color: map-get(shared.$colors, "white");
+  border: 1px solid map-get(shared.$colors, "blue");
+  border-radius: 0.5em;
+  width: 300px;
+  overflow: hidden;
+  transition: 300ms;
+  &:hover {
+    border: 1px solid darken(map-get(shared.$colors, "blue"), 40%);
+  }
+}
+
+.card__image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__content {
+  padding: 0em 2em 1em 2em;
+  &h2 {
+    text-align: center;
+    margin: 0.4em 0;
+  }
+}
+
+.card__details {
+  @include shared.reset-list;
+  margin: 1em 0 0 0;
+  li {
+    margin: 0.5em 0;
+  }
+}

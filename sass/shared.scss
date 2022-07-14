@@ -1,0 +1,41 @@
+$colors: (
+  "purple": #d9a7d5,
+  "blue": #6b7ff2,
+  "yellow": #f2d541,
+  "grey": #515151,
+  "white": #f5f5f5,
+);
+
+$font-weights: (
+  "regular": 300,
+  "medium": 500,
+  "bold": 700,
+);
+
+$lightblue-gradient: linear-gradient(
+  180deg,
+  lighten(map-get($colors, "blue"), 27%) 0%,
+  white 100%
+);
+
+@mixin title-generator($fw, $clr) {
+  font-weight: map-get($font-weights, $fw);
+  color: map-get($colors, $clr);
+  text-align: center;
+}
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-link {
+  text-decoration: none;
+  color: black;
+}

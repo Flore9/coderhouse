@@ -1,0 +1,1 @@
+.advices{display:flex;gap:1em;flex-direction:column;width:min(80%,1366px);margin-inline:auto;padding-bottom:2em}.advices h2{padding-block:1em}@media(min-width: 1024px){.advices{flex-direction:row}}.advices__card{background-color:#e0e4fc;height:100%;border-radius:1em;padding:1em 3em}.advices__card ol li{margin-block:.5em}/*# sourceMappingURL=advices.css.map */

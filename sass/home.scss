@@ -1,0 +1,86 @@
+@use "shared";
+
+/* Home: Section Hero */
+.hero {
+  @include shared.column;
+  padding: 1em;
+  align-items: center;
+  overflow-x: hidden;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+
+.hero__text {
+  text-align: center;
+  animation: slide-left 1.5s;
+  h1 {
+    @include shared.title-generator("bold", "blue");
+    font-size: 4rem;
+    line-height: 1em;
+    padding: 0.5em 5em;
+  }
+
+  p {
+    color: map-get(shared.$colors, "grey");
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.hero__img {
+  max-width: 100%;
+  width: fit-content;
+  animation: slide-right 1.5s;
+  img {
+    max-width: 100%;
+  }
+  @media (min-width: 1024px) {
+    margin-inline: auto;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.new__pets {
+  background-color: lighten(map-get(shared.$colors, "blue"), 25%);
+  padding: 0.5em;
+}
+
+.new__pets__list {
+  @include shared.reset-list;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+  overflow-x: auto;
+  max-width: fit-content;
+  margin-inline: auto;
+
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  &::-webkit-scrollbar {
+    background-color: map-get(shared.$colors, "blue");
+    border-radius: 1em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: map-get(shared.$colors, "blue");
+    border-radius: 1em;
+  }
+}

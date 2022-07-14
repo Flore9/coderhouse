@@ -1,0 +1,38 @@
+@use "shared";
+
+.form {
+  width: min(90%, 512px);
+  margin: 0 auto;
+}
+
+.label--block {
+  display: block;
+  width: 100%;
+}
+
+.input {
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  border: 1px solid map-get(shared.$colors, "blue");
+  opacity: 0.5;
+  background-color: map-get(shared.$colors, "white");
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.input-full-size {
+  width: 100%;
+}
+
+.input-container {
+  margin-block: 0.5rem;
+}
+
+.button-container {
+  margin: 0 auto;
+  width: fit-content;
+  .btn {
+    padding-inline: 5em;
+  }
+}
