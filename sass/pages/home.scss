@@ -1,11 +1,10 @@
-@use "shared";
+@use "../shared";
 
 /* Home: Section Hero */
 .hero {
   @include shared.column;
   padding: 1em;
   align-items: center;
-  overflow-x: hidden;
   @media (min-width: 1024px) {
     flex-direction: row;
   }
@@ -14,15 +13,25 @@
 .hero__text {
   text-align: center;
   animation: slide-left 1.5s;
+  max-width: 100%;
   h1 {
     @include shared.title-generator("bold", "blue");
     font-size: 4rem;
     line-height: 1em;
-    padding: 0.5em 5em;
+    @media (min-width: 1024px) {
+      padding: 0.5em 5em;
+    }
   }
 
   p {
+    max-width: 80%;
     color: map-get(shared.$colors, "grey");
+    margin-inline: auto;
+    padding-block: 1em;
+    @media (min-width: 1024px) {
+      max-width: 60%;
+      padding: 0;
+    }
   }
 }
 

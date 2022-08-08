@@ -1,10 +1,10 @@
 @use "shared";
-@use "home";
-@use "rescued";
-@use "card";
-@use "advices";
-@use "about";
-@use "form";
+@use "pages/home";
+@use "pages/rescued";
+@use "pages/advices";
+@use "pages/about";
+@use "components/form";
+@use "components/card";
 
 * {
   margin: 0;
@@ -51,11 +51,6 @@ main {
   &:hover {
     background-color: darken(map-get(shared.$colors, "blue"), 40%);
   }
-}
-
-.btn-primary {
-  @extend .btn;
-  background-color: map-get(shared.$colors, "purple");
 }
 
 header {
