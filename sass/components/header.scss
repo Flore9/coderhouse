@@ -1,0 +1,47 @@
+@use "../shared";
+
+header {
+  @include shared.column;
+  background: shared.$lightblue-gradient;
+  align-items: center;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 3em;
+  }
+}
+
+.header__nav__list {
+  @include shared.reset-list;
+  display: flex;
+  gap: 0 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  li {
+    a {
+      $color: darken(map-get(shared.$colors, "blue"), 30%);
+      @include shared.reset-link;
+      font-weight: map-get(shared.$font-weights, "medium");
+      color: $color;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        bottom: -5px;
+        transform: translateX(-100%);
+      }
+      &:hover {
+        &::after {
+          transition: background-color 150ms ease-in;
+          background-color: $color;
+        }
+      }
+    }
+  }
+}
